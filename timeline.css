@@ -1,0 +1,90 @@
+body{
+    font-family: "Vollkorn";
+}
+
+h1{
+    font-weight: 900;
+    text-align: center;
+}
+
+h2{
+    font-weight: 400;
+    text-align: center;
+    font-style: italic;
+}
+
+#scatter {
+    position: absolute; 
+    left: 0px; 
+    top:0px;
+    z-index: 2;
+}
+
+/* axis */
+.axis line{
+  fill: none;
+  stroke: lightgrey;
+  shape-rendering: crispEdges;
+}
+
+.axis text{
+    font-size: 16px;
+    font-family: "Vollkorn";
+    font-weight: 900;
+}
+
+/* d3-tip styling */ 
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips specifically */
+.d3-tip.n:after {
+  margin: -2px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+/* Annotation styling */
+.annotation-connector{
+    stroke: black;
+}
+
+.annotation-suject, .note-line{
+    stroke: none;
+}
+
+.annotation-note text{
+    font-family: "Roboto";
+}
+
+.annotation-note-label {
+    font-weight: 300;
+    fill: black;
+}
+
+.annotation-note-title {
+    font-weight: 900;
+    fill: black;
+    font-style: italic;
+}
+
+
